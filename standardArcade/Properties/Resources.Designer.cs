@@ -77,5 +77,14 @@ namespace standardArcade.Properties {
                 return ResourceManager.GetStream("countdown_alert", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream pacman_chomp {
+            get {
+                return ResourceManager.GetStream("pacman_chomp", resourceCulture);
+            }
+        }
     }
 }

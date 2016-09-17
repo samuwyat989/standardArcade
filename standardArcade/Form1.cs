@@ -23,7 +23,7 @@ namespace standardArcade
         {
             Controls.Remove(playButton);
             packMan.Visible = false;
-            /*countdown.ForeColor = Color.White;
+            countdown.ForeColor = Color.White;
 
             Refresh();
             Thread.Sleep(1000);
@@ -58,7 +58,7 @@ namespace standardArcade
             go.ForeColor = Color.White;
 
             Refresh();
-            Thread.Sleep(1000);*/
+            Thread.Sleep(1000);
 
             Controls.Remove(countdown);
             Controls.Remove(go);
@@ -135,12 +135,13 @@ namespace standardArcade
             SolidBrush yellowBrush = new SolidBrush(Color.Yellow);
             Font endFont = new Font("Modern No. 20", 16, FontStyle.Bold);
 
+            SoundPlayer player = new SoundPlayer(Properties.Resources.pacman_chomp);
+            player.Play();
             //FillPie(brush, x, y, width, height, startAngle, arcAngle)
             //DrawPie (pen, x, y, width, height, startAngle, arcAngle)
 
             packManGame.FillPie(blackBrush, 35, 55, 30, 30, 40, 260);
             packManGame.DrawPie(blackPen, 35, 55, 30, 30, 40, 260);
-
             packManGame.DrawPie(yellowPen, 70, 55, 30, 30, 40, 360);
             packManGame.FillPie(yellowBrush, 70, 55, 30, 30, 40, 360);
 
@@ -158,21 +159,31 @@ namespace standardArcade
 
             packManGame.FillPie(blackBrush, 70, 55, 30, 30, 40, 260);
             packManGame.DrawPie(blackPen, 70, 55, 30, 30, 40, 260);
-
-            Thread.Sleep(0200);
-
             packManGame.DrawPie(yellowPen, 120, 55, 30, 30, 40, 360);
             packManGame.FillPie(yellowBrush, 120, 55, 30, 30, 40, 360);
-           
-            Thread.Sleep(0200);
 
+            player = new SoundPlayer(Properties.Resources.pacman_chomp);
+            player.Play();
+
+            Thread.Sleep(0200);
+            
             packManGame.DrawPie(blackPen, 120, 55, 30, 30, 40, 360);
             packManGame.FillPie(blackBrush, 120, 55, 30, 30, 40, 360);
 
             Thread.Sleep(0200);
-
+            
             packManGame.DrawPie(yellowPen, 160, 55, 30, 30, 40, 260);
             packManGame.FillPie(yellowBrush, 160, 55, 30, 30, 40, 260);
+
+            Thread.Sleep(0200);
+
+            packManGame.DrawPie(blackPen, 160, 55, 30, 30, 40, 260);
+            packManGame.FillPie(blackBrush, 160, 55, 30, 30, 40, 260);
+            packManGame.DrawPie(yellowPen, 160, 55, 30, 30, 40, 360);
+            packManGame.FillPie(yellowBrush, 160, 55, 30, 30, 40, 360);
+
+            player = new SoundPlayer(Properties.Resources.pacman_chomp);
+            player.Play();
 
             Thread.Sleep(0200);
 
@@ -188,11 +199,11 @@ namespace standardArcade
 
             packManGame.DrawPie(blackPen, 200, 55, 30, 30, 40, 260);
             packManGame.FillPie(blackBrush, 200, 55, 30, 30, 40, 260);
-
-            Thread.Sleep(0200);
-
             packManGame.DrawPie(yellowPen, 200, 55, 30, 30, 40, 360);
             packManGame.FillPie(yellowBrush, 200, 55, 30, 30, 40, 360);
+
+            player = new SoundPlayer(Properties.Resources.pacman_chomp);
+            player.Play();
 
             Thread.Sleep(0200);
 
@@ -201,64 +212,84 @@ namespace standardArcade
 
             Thread.Sleep(0200);
 
-            //
-            //packManGame.RotateTransform(180);
-            //
-
-            packManGame.DrawPie(yellowPen, 200, 100, 30, 30, 40, 260);
-            packManGame.FillPie(yellowBrush, 200, 100, 30, 30, 40, 260);
+            packManGame.DrawPie(yellowPen, 200, 55, 30, 30, 140, 360);
+            packManGame.FillPie(yellowBrush, 200, 55, 30, 30, 140, 360);
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(blackPen, 200, 100, 30, 30, 40, 260);
-            packManGame.FillPie(blackBrush, 200, 100, 30, 30, 40, 260);
-            
-            Thread.Sleep(0200);
-
-            packManGame.DrawPie(yellowPen, 200, 100, 30, 30, 40, 360);
-            packManGame.FillPie(yellowBrush, 200, 100, 30, 30, 40, 360);
+            packManGame.DrawPie(blackPen, 200, 55, 30, 30, 140, 360);
+            packManGame.FillPie(blackBrush, 200, 55, 30, 30, 140, 360);
+            packManGame.DrawPie(yellowPen, 200, 100, 30, 30, 140, 260);
+            packManGame.FillPie(yellowBrush, 200, 100, 30, 30, 140, 260);
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(blackPen, 200, 100, 30, 30, 40, 360);
-            packManGame.FillPie(blackBrush, 200, 100, 30, 30, 40, 360);
+            packManGame.DrawPie(blackPen, 200, 100, 30, 30, 140, 260);
+            packManGame.FillPie(blackBrush, 200, 100, 30, 30, 140, 260);
+            packManGame.DrawPie(yellowPen, 200, 100, 30, 30, 140, 360);
+            packManGame.FillPie(yellowBrush, 200, 100, 30, 30, 140, 360);
+
+            player = new SoundPlayer(Properties.Resources.pacman_chomp);
+            player.Play();
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(yellowPen, 200, 125, 30, 30, 40, 260);
-            packManGame.FillPie(yellowBrush, 200, 125, 30, 30, 40, 260);
+            packManGame.DrawPie(blackPen, 200, 100, 30, 30, 140, 360);
+            packManGame.FillPie(blackBrush, 200, 100, 30, 30, 140, 360);
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(blackPen, 200, 125, 30, 30, 40, 260);
-            packManGame.FillPie(blackBrush, 200, 125, 30, 30, 40, 260);
+            packManGame.DrawPie(yellowPen, 200, 125, 30, 30, 140, 260);
+            packManGame.FillPie(yellowBrush, 200, 125, 30, 30, 140, 260);
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(yellowPen, 200, 165, 30, 30, 40, 260);
-            packManGame.FillPie(yellowBrush, 200, 165, 30, 30, 40, 260);
+            packManGame.DrawPie(blackPen, 200, 125, 30, 30, 140, 260);
+            packManGame.FillPie(blackBrush, 200, 125, 30, 30, 140, 260);
+            packManGame.DrawPie(yellowPen, 200, 125, 30, 30, 140, 360);
+            packManGame.FillPie(yellowBrush, 200, 125, 30, 30, 140, 360);
+
+            player = new SoundPlayer(Properties.Resources.pacman_chomp);
+            player.Play();
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(yellowPen, 200, 165, 30, 30, 40, 360);
-            packManGame.FillPie(yellowBrush, 200, 165, 30, 30, 40, 360);
+            packManGame.DrawPie(blackPen, 200, 125, 30, 30, 140, 360);
+            packManGame.FillPie(blackBrush, 200, 125, 30, 30, 140, 360);
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(blackPen, 200, 165, 30, 30, 40, 360);
-            packManGame.FillPie(blackBrush, 200, 165, 30, 30, 40, 360);
+            packManGame.DrawPie(yellowPen, 200, 165, 30, 30, 140, 260);
+            packManGame.FillPie(yellowBrush, 200, 165, 30, 30, 140, 260);
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(blackPen, 200, 180, 30, 30, 40, 260);
-            packManGame.FillPie(blackBrush, 200, 180, 30, 30, 40, 260);
+            packManGame.DrawPie(blackPen, 200, 165, 30, 30, 140, 260);
+            packManGame.FillPie(blackBrush, 200, 165, 30, 30, 140, 260);
+            packManGame.DrawPie(yellowPen, 200, 165, 30, 30, 140, 360);
+            packManGame.FillPie(yellowBrush, 200, 165, 30, 30, 140, 360);
+
+            player = new SoundPlayer(Properties.Resources.pacman_chomp);
+            player.Play();
 
             Thread.Sleep(0200);
 
-            packManGame.DrawPie(yellowPen, 200, 200, 30, 30, 40, 260);
-            packManGame.FillPie(yellowBrush, 200, 200, 30, 30, 40, 260);
+            packManGame.DrawPie(blackPen, 200, 165, 30, 30, 140, 360);
+            packManGame.FillPie(blackBrush, 200, 165, 30, 30, 140, 360);
 
-            packManGame.DrawString("Congradulations", endFont, yellowBrush, 10, 170);
+            Thread.Sleep(0200);
+
+            packManGame.DrawPie(yellowPen, 200, 200, 30, 30, 140, 260);
+            packManGame.FillPie(yellowBrush, 200, 200, 30, 30, 140, 260);
+
+            Thread.Sleep(0200);
+
+            packManGame.DrawPie(blackPen, 200, 200, 30, 30, 140, 260);
+            packManGame.FillPie(blackBrush, 200, 200, 30, 30, 140, 260);
+            packManGame.DrawPie(yellowPen, 200, 200, 30, 30, 140, 360);
+            packManGame.FillPie(yellowBrush, 200, 200, 30, 30, 140, 360);
+
+            packManGame.DrawString("Congratulations!", endFont, yellowBrush, 10, 170);
         }
 
 

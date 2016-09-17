@@ -79,7 +79,7 @@
             this.packMan.Name = "packMan";
             this.packMan.Size = new System.Drawing.Size(75, 23);
             this.packMan.TabIndex = 3;
-            this.packMan.Text = "START";
+            this.packMan.Text = "RUN";
             this.packMan.UseVisualStyleBackColor = false;
             this.packMan.Click += new System.EventHandler(this.packMan_Click);
             // 

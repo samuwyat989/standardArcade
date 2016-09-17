@@ -86,6 +86,9 @@
   <ItemGroup>
     <None Include="Resources\Air Horn-SoundBible.com-964603082.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_chomp.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
